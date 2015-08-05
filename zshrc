@@ -5,8 +5,9 @@ source ${HOME}/.dotrc/env.sh
 
 # Include subscripts
 INC=${DOTRC}/zsh
-source ${INC}/oh-my-zsh.zsh
-source ${INC}/opts.zsh
-source ${INC}/colors.zsh
-source ${INC}/aliases.zsh
-source ${INC}/code.zsh
+[ ! $OHMYZSH_LOADED ]    && source ${INC}/oh-my-zsh.zsh
+[ ! $ZSHOPTS_LOADED ]    && source ${INC}/opts.zsh
+[ ! $ZSHCOLORS_LOADED ]  && source ${INC}/colors.zsh
+[ ! $ZSHALIASES_LOADED ] && source ${INC}/aliases.zsh
+[ ! $ZSHCOLORS_LOADED ]  && source ${INC}/code.zsh
+[ ! $ZSHLOCALRC_LOADED ] && source ${INC}/local-zshrc.zsh

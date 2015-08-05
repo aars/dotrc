@@ -44,3 +44,5 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git osx brew npm)
 
 source $ZSH/oh-my-zsh.sh
+
+OHMYZSH_LOADED=1
