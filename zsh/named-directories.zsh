@@ -1,1 +1,1 @@
-STUFF=/Users/aaronh/src
+FOO=${HOME}/src
